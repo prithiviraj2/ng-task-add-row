@@ -1,0 +1,7 @@
+<div class="container">
+    <select class="form-control" style="width: 50%;" (change)="navigateTo($event)" required>
+        <option *ngFor="let list of componentpath" [value]="list.name">
+            {{list.name}}
+        </option>
+    </select>
+</div>
